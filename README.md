@@ -89,4 +89,3 @@
    - distribution_students
    - redistribute_students
 4. Api во views.
-5. 
