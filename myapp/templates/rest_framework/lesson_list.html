@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson List</title>
+</head>
+<body>
+<h1>Lesson List</h1>
+<ul>
+    {% for lesson in lessons %}
+        <li>
+            <strong>Title:</strong> {{ lesson.title }}<br>
+            <strong>Video_link:</strong> {{ lesson.video_link }}
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
