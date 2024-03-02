@@ -5,4 +5,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('products/', product_list),
     path('products/<int:product_id>/lessons/', LessonList.as_view(), name='lesson-list'),
+    path('product-stats/', product_stats_view, name='product_stats'),
 ]

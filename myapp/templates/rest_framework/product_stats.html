@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Статистика продуктов</title>
+</head>
+<body>
+    <h1>Статистика продуктов</h1>
+    <table>
+        <tr>
+            <th>Название продукта</th>
+            <th>Количество студентов</th>
+            <th>Заполненность групп</th>
+            <th>Процент покупок</th>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.num_students }}</td>
+            <td>{{ product.avg_group_fill_rate }}</td>
+            <td>{{ product.purchase_percentage }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
